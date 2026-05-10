@@ -23,7 +23,9 @@ on:
     # 北京时间 00:00（次日凌晨），周一至周五
     - cron: '0 0 * * 1-5'
       timezone: 'Asia/Shanghai'
-      
+
+  # 手动触发（不需要 inputs）
+  workflow_dispatch:
     inputs:
       mode:
         description: '运行模式'
